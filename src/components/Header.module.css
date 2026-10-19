@@ -51,10 +51,16 @@
 .navigation a {
     color: #94a3b8;
     font-size: 0.85rem;
+    text-decoration: none;
 }
 
 .navigation a:hover {
     color: #5eead4;
+}
+
+.navigation a.active {
+    color: #5eead4;
+    font-weight: 700;
 }
 
 @media (max-width: 500px) {
