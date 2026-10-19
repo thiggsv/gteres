@@ -1,16 +1,22 @@
-import Greetings from './components/Greetings'
 import { Header } from './components/Header'
 import './App.css'
-
-const user = window.prompt("Qual o seu nome?") || "Visitante";
+import Home from './pages/Home';
 
 function App() {
   return (
     <>
-      <Header/>
-      <Greetings nome={user}/>
+      <Header
+        brand="Geração Tech" 
+        description="Sede Bezerra"
+      >
+        <a href="#equipe">Equipe</a>
+        <a href="#aprendizado">Aprendizado</a>
+      </Header>
+      <main className='container'>
+        <Home/>
+      </main>
     </>
   )
 }
 
-export default App
+export default App;
