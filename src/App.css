@@ -8,51 +8,30 @@
   padding: 0 2rem 5rem;
 }
 
-.visitor-form {
-  background: #1e293b;
-  border: 1px solid #334155;
-  border-radius: 1rem;
-  margin: 1.5rem 0 2rem;
-  padding: 1.25rem;
+.name-form {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 2.5rem;
+  max-width: 360px;
 }
 
-.visitor-form label {
+.name-form label {
   color: #cbd5e1;
-  display: block;
   font-size: 0.9rem;
-  font-weight: 600;
-  margin-bottom: 0.75rem;
 }
 
-.visitor-form__controls {
-  display: flex;
-  gap: 0.75rem;
-}
-
-.visitor-form input,
-.visitor-form button {
-  border: 0;
+.name-form input {
+  background: #172033;
+  border: 1px solid #334155;
   border-radius: 0.5rem;
-  font: inherit;
-  padding: 0.7rem 0.9rem;
-}
-
-.visitor-form input {
-  background: #0f172a;
   color: #f8fafc;
-  flex: 1;
-  min-width: 0;
+  font: inherit;
+  padding: 0.75rem;
 }
 
-.visitor-form input::placeholder {
-  color: #64748b;
-}
-
-.visitor-form button {
-  background: #5eead4;
-  color: #0f172a;
-  cursor: pointer;
-  font-weight: 700;
+.name-form input:focus {
+  border-color: #14b8a6;
+  outline: 2px solid rgba(20, 184, 166, 0.2);
 }
 
 .learning-panel {
@@ -136,14 +115,11 @@ code {
 
 @media (max-width: 500px) {
   .container {
-    padding: 0 1rem 3rem;
+    padding: 0 1rem 35rem;
   }
 
   .learning-panel {
     padding: 1.25rem;
   }
-
-  .visitor-form__controls {
-    flex-direction: column;
-  }
 }
+
