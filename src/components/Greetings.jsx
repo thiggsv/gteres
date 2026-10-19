@@ -1,3 +1,4 @@
+import './Greetings.css'
 function Greetings({ nome, mensagem = "Seja bem vindo(a)!" }) {
     return(
         <div className="greeting">
